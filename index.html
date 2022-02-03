@@ -20,7 +20,7 @@
 <body>
     <main class="gradient__box">
         <!------------------------------------- Header Section ------------------------------->
-        <header>
+        <header id="header">
             <!-- Navbar -->
             <nav>
                 <div class="nav__container">
@@ -29,6 +29,9 @@
                             <img src="images/logo.svg" alt="Thekua Logo" class="nav__logo">
 
                         </a>STUDIO
+                    </div>
+                    <div class="notch__container">
+                       <p> thekua is a india dish, mostly famous in Bihar and Jharkhand. </p>
                     </div>
                     <div class="contact__no__container">
                         <p>Call Us: 7070707070</p>
@@ -56,19 +59,39 @@
                 <div class="article__card__container a1">
                     <div class="article__type__link">
                         <a class="article__type">BLOG</a>
-                    </div>   
-                    <img src="images/blog.png" >
+                    </div>
+                    <img src="images/blog.png">
                     <h2>Why and how the snpachat’s scroll to refresh is a winning emotional design</h2>
                 </div>
 
                 <!-- Card 2 -->
-                 <div class="article__card__container">
-                     <div class="article__type__link">
-                         <a class="article__type">BLOG</a>
-                     </div>
-                     <img src="images/blog.png">
-                     <h2>Why and how the snpachat’s scroll to refresh is a winning emotional design</h2>
-                 </div>
+                <div class="article__card__container a2">
+                    <div class="article__type__link">
+                        <a class="article__type">BLOG</a>
+                    </div>
+                    <img src="images/blog.png">
+                    <h2>Why and how the snpachat’s scroll to refresh is a winning emotional design</h2>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="article__card__container a3">
+                    <div class="article__type__link">
+                        <a class="article__type">BLOG</a>
+                    </div>
+                    <img src="images/blog.png">
+                    <h2>Why and how the snpachat’s scroll to refresh is a winning emotional design</h2>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="article__card__container a4">
+                    <div class="article__type__link">
+                        <a class="article__type">BLOG</a>
+                    </div>
+                    <img src="images/blog.png">
+                    <h2>Why and how the snpachat’s scroll to refresh is a winning emotional design</h2>
+                </div>
+
             </article>
         </section>
 
@@ -76,14 +99,14 @@
         <section id="story__telling__section">
             <div class="story__telling__container">
                 <div class="video__container">
-                <video height="100%" width="100%" autoplay muted>
-                    <source src="images/storytelling.webm" type="video/webm">
+                    <video height="100%" width="100%" autoplay muted>
+                        <source src="images/storytelling.webm" type="video/webm">
                     </video>
-                    </div>
-                    <h1 class="story__telling__text">
-                        we don’t do anything without storytelling!
-                    </h1>
                 </div>
+                <h1 class="story__telling__text">
+                    we don’t do anything without storytelling!
+                </h1>
+            </div>
             </div>
         </section>
 
@@ -102,23 +125,82 @@
                         <p>This is a continious loop, one of those loop which we love getting into</p>
                     </div>
                 </div>
-            <div class="feature__card f2">
-                <div>
-                    <h1>
-                        we like calling ourselves a <span style="color: #33a880"> landing page mafia </span>
-                    </h1>
+                <div class="feature__card f2">
+                    <div class="eye__container">
+                        <div class="eye1">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="eye2">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>
+                            we like calling ourselves a <span style="color: #33a880"> landing page mafia </span>
+                        </h1>
+                    </div>
                 </div>
-                                </div>
             </div>
         </section>
+
+        <!-- Services Section -->
+        <div class="services__container">
+            <h1 class="services__heading">Services</h1>
+        </div>
 
     </main>
 
 
+    <div class="services__cards__container">
+        <div class="service__card">
+            <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_ft0cqvpu.json"
+                background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            <p class="service__name">UI/UX<br>Design</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service__card">
+            <lottie-player src="" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
+            </lottie-player>
+            <p class="service__name">Website<br>Development</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service__card">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_s9rvx4lt.json" background="transparent"
+                speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+
+            <p class="service__name">Custom<br>Software</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service__card">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_XRTpH5.json" background="transparent"
+                speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+
+            <p class="service__name">Social Media<br>Marketing</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service__card">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bdlrkrqv.json" background="transparent"
+                speed="1" style="width: 100%; height: 100%;" loop autoplay>
+            </lottie-player>
+            <p class="service__name">Content<br>Management</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service__message">
+            <h1>There’s a lot more, that we can do.</h1>
+            <a href="index.html">get in touch <i class="fas fa-sort-up"></i></a>
+        </div>
+
+    </div>
+
 
 
     <!-- Testimonial Section -->
-    <section class="testimonial__section">
+    <section id="testimonial__section">
         <div class="testimonial__container">
             <h1 class="testimonial__header">
                 What they say!
@@ -147,28 +229,28 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <!-- Card 2 -->
-<div class="testimonial__card__container">
-    <p class="testimonial__para">Within 2 days, I had a beautiful clear-cut proposal, within 4 days ,
-        an entire mobile end to end mockup and within 4 weeks , a functionally
-        working mobile application.
-    </p>
+                <div class="testimonial__card__container">
+                    <p class="testimonial__para">Within 2 days, I had a beautiful clear-cut proposal, within 4 days ,
+                        an entire mobile end to end mockup and within 4 weeks , a functionally
+                        working mobile application.
+                    </p>
 
-    <div class="testimonial__info__block">
-        <div class="testimonial_info">
-            <div class="testimonial__owner__info">
-                <img src="./images/linked_dark.svg" alt="LinkedIn" class="testimonial__img">
-                <p class="testimonial__name">John Doe</p>
-            </div>
-            <p class="testimonial__position">CEO, Google</p>
-        </div>
-        <div>
-            <img src="./images/quote.svg" alt="quote" class="quote">
-        </div>
-    </div>
-</div>
+                    <div class="testimonial__info__block">
+                        <div class="testimonial_info">
+                            <div class="testimonial__owner__info">
+                                <img src="./images/linked_dark.svg" alt="LinkedIn" class="testimonial__img">
+                                <p class="testimonial__name">John Doe</p>
+                            </div>
+                            <p class="testimonial__position">CEO, Google</p>
+                        </div>
+                        <div>
+                            <img src="./images/quote.svg" alt="quote" class="quote">
+                        </div>
+                    </div>
+                </div>
                 <!-- Card 3 -->
                 <div class="testimonial__card__container">
                     <p class="testimonial__para">Within 2 days, I had a beautiful clear-cut proposal, within 4 days ,
@@ -194,14 +276,14 @@
     </section>
 
     <!-- CTAs Section -->
-    <section class="cta__section">
+    <section id="cta__section">
         <h1 class="cta__header">Let's Craft</h1>
         <a href="index.html" class="cta__link">just a mail away<i class="fas fa-sort-up"></i></a>
         <p class="cta__time__limit">Average Response Time: 40mins</p>
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer id="footer">
         <p class="footer__header">We have pledged</p>
         <p class="footer__para">At thekua we understood why giving is so important. We have pledged
             to give 2% of our annual turn over to Girls Education in Jharkhand.We have pledged
@@ -211,8 +293,16 @@
         <div class="footer__logo__container">
             <img src="./images/logo.svg" alt="logo" class="footer__logo">
         </div>
-        <p class="copyright_para">Copyright c 2021 - All rights reserved| Thekua DESIGN STUDIO</p>
+        <p class="copyright_para">Copyright © <span id="year">2021</span> - All rights reserved| Thekua DESIGN STUDIO
+        </p>
     </footer>
+
+
+
+    <!-- Script Files -->
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
