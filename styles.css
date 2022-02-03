@@ -210,15 +210,22 @@ background: transparent linear-gradient(180deg, #D6FFC1 0%, #24AC97 100%) 0% 0% 
 .article__type__link {
   margin: 20px 0;
 }
-.article__type {
+.a1 .article__type, .a2 .article__type ,.a3 .article__type ,.a4 .article__type  {
   font-family: Gilroy-Regular;
   font-weight: 600;
   font-size: 1rem;
   background-color: black;
-  color: yellow;
   padding: 2% 5%;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+
+.article__type__link {
+  width: 80px;
+}
+
+.at1 {
+  color: linear-gradient(180deg, #ffe200 0%, #e7f847 77%, #e0ff5c 100%);
 }
 
 .article__card__container img {
@@ -693,17 +700,6 @@ article {
 .article__type__link {
   margin: 20px 0;
 }
-.article__type {
-  font-family: Gilroy-Regular;
-  font-weight: 600;
-  font-size: 1rem;
-  background-color: black;
-  color: yellow;
-  padding: 2% 5%;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
 .article__card__container h2 {
   font-family: Gilroy-Bold;
   font-weight: 900;
