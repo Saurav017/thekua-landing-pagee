@@ -1037,7 +1037,15 @@ footer {
 /* Small Devices */
 
 @media screen and (max-width: 600px) {
+
+header {
+  height: 80vh;
+  width: 100%;
+  background: transparent;
+}
+
   .hero__container {
+
     margin: 5% auto;
     width: 80%;
   }
@@ -1103,6 +1111,12 @@ footer {
   .feature__card h1 {
     font-size: 2rem;
   }
+
+  
+.f2 {
+  padding: 5% 40% 5% 13%;
+}
+
 
   .f2 h1 {
     font-size: 2rem;
@@ -1179,4 +1193,9 @@ footer {
   .footer__para {
     width: 80%;
   }
+
+  .copyright__para {
+    width: 80%;
+  }
+
 }
