@@ -44,7 +44,7 @@
 }
 
 header {
-  height: 81vh;
+  height: 71vh;
   width: 100%;
   background: transparent;
 }
@@ -198,6 +198,8 @@ article {
 }
 
 .article__card__container {
+  display: flex;
+  flex-direction: column;
   padding: 5%;
 }
 
@@ -231,11 +233,11 @@ article {
   background: transparent
     linear-gradient(
       180deg,
-      rgba(255, 266, 0, 0.5) 0%,
-      rgba(231, 248, 71, 0.5) 77%,
-      rgba(224, 255, 92, 0.5) 100%
+      rgba(214, 255, 193, 0.5) 0%,
+      rgba(36, 172, 151, 0.5) 100%
     )
     0% 0% no-repeat padding-box;
+
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
 }
@@ -244,8 +246,8 @@ article {
   background: transparent
     linear-gradient(
       180deg,
-      rgba(236, 185, 255, 0.5) 0%,
-      rgba(64, 158, 216, 0.5) 100%
+      rgba(236, 185, 255, 0.3) 0%,
+      rgba(64, 158, 216, 0.3) 100%
     )
     0% 0% no-repeat padding-box;
   backdrop-filter: blur(30px);
@@ -256,9 +258,9 @@ article {
   background: transparent
     linear-gradient(
       180deg,
-      rgba(255, 266, 0, 0.5) 0%,
-      rgba(231, 248, 71, 0.5) 77%,
-      rgba(224, 255, 92, 0.5) 100%
+      rgba(255, 266, 0, 0.3) 0%,
+      rgba(231, 248, 71, 0.3) 77%,
+      rgba(224, 255, 92, 0.3) 100%
     )
     0% 0% no-repeat padding-box;
   backdrop-filter: blur(30px);
@@ -266,11 +268,12 @@ article {
 }
 
 .a-four {
-  background: transparent
-    linear-gradient(
+  
+background:   transparent  linear-gradient(
       180deg,
-      rgba(214, 255, 193, 0.5) 0%,
-      rgba(36, 172, 151, 0.5) 100%
+      rgba(255, 266, 0, 0.3) 0%,
+      rgba(231, 248, 71, 0.3) 77%,
+      rgba(224, 255, 92, 0.3) 100%
     )
     0% 0% no-repeat padding-box;
   backdrop-filter: blur(30px);
@@ -315,10 +318,11 @@ article {
   width: 100%;
   height: 100%;
   background: transparent;
-  padding: 5% 20% 2%;
+  padding: 5% 17% 2%;
 }
 
 .story__telling__container {
+  padding: 1% 0 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -372,7 +376,7 @@ article {
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: 5%;
+  padding: 5% 10%;
 }
 
 .feature__card p {
@@ -392,14 +396,19 @@ article {
   border: 0.20000000298023224px solid #d8e3e6;
   border-radius: 14px;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
+
 
 .f2 {
   background: #000000 0% 0% no-repeat padding-box;
   border-radius: 14px;
   opacity: 1;
   color: white;
-  padding: 5% 10% 5% 5%;
+  padding: 5% 13%;
 }
 
 .eye__container {
@@ -449,8 +458,14 @@ article {
   font-family: Gilroy-ExtraBold;
   padding: 2% 0;
   color: transparent;
+
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000;
+    -moz-text-stroke-width: 2px;
+  -moz-text-stroke-color: #000;
+  -o-text-stroke-width: 2px;
+  -o-text-stroke-color: #000;
+
   letter-spacing: 0.2rem;
 }
 
@@ -586,6 +601,7 @@ article {
   font-weight: 500;
   text-align: left;
   padding: 20px 0 40px;
+  line-height: 1.3
 }
 
 .testimonial__info__block {
