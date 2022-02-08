@@ -1,18 +1,40 @@
+const ctaLink = document.querySelector('.hero__cta__link');
+const ctaLink2 = document.querySelector('.cta__link');
+const modal = document.querySelector('.model');
+const closeButton = document.querySelector('.modal__close');
+// Modal Section
+
+function showModal() {
+  modal.style.display = 'block';
+
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    showModal();
+  }
+
+}
+
+function hideModal() {
+  modal.style.display = 'none';
+}
+
+ctaLink.addEventListener('click', showModal);
+ctaLink2.addEventListener('click', showModal);
+window.addEventListener('click', windowOnClick);
+closeButton.addEventListener('click', hideModal);
+
+
+
+
+
 
 // Copyright year
 document.getElementById("year").innerHTML = new Date().getFullYear();
 const notchValue =  document.querySelector(".notch__container p")
-arr = [
-  "Hello World 1",
-  "Hellow World 2",
-  "Hellow World 3",
-  "Hellow World 4",
-    "Hellow World 5",
-    "Hello 6",
-  "Hello 7"
-];
 
-const sec__array = [];
+
 
 // changing notch content on every section
 
@@ -63,7 +85,6 @@ window.onscroll = () => {
               "thekua is a india dish, mostly famous in Bihar and Jharkhand.";
             break;
     }
-
-
-
 }
+
+

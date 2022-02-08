@@ -1,31 +1,40 @@
 @font-face {
   font-family: Gilroy-Regular;
   src: url(./fonts/Gilroy-Regular.ttf);
+  letter-spacing: 0;
+
 }
 
 @font-face {
   font-family: Gilroy-SemiBold;
   src: url(./fonts/Gilroy-SemiBold.ttf);
+  letter-spacing: 0;
 }
 
 @font-face {
   font-family: Gilroy-Bold;
   src: url(./fonts/Gilroy-Bold.ttf);
+  letter-spacing: 0;
+  
 }
 
 @font-face {
   font-family: Gilroy-ExtraBold;
   src: url(./fonts/Gilroy-ExtraBold.ttf);
+  letter-spacing: 0;
+  
 }
 
 @font-face {
   font-family: Gilroy-Heavy;
   src: url(./fonts/Gilroy-Heavy.ttf);
+letter-spacing: 0;
 }
 
 @font-face {
   font-family: Gilroy-Medium;
   src: url(./fonts/Gilroy-Medium.ttf);
+  letter-spacing: 0;
 }
 
 * {
@@ -172,9 +181,14 @@ hr {
 }
 
 .hero__cta__link {
+  background: transparent;
+  border: none;
   color: #33a880;
   text-decoration: underline;
   text-decoration-color: #33a880;
+  font-size: 1.2rem;
+  font-family: Gilroy-SemiBold;
+  cursor: pointer;
 }
 
 .fas {
@@ -268,8 +282,8 @@ article {
 }
 
 .a-four {
-  
-background:   transparent  linear-gradient(
+  background: transparent
+    linear-gradient(
       180deg,
       rgba(255, 266, 0, 0.3) 0%,
       rgba(231, 248, 71, 0.3) 77%,
@@ -399,9 +413,7 @@ background:   transparent  linear-gradient(
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
-
 
 .f2 {
   background: #000000 0% 0% no-repeat padding-box;
@@ -461,7 +473,7 @@ background:   transparent  linear-gradient(
 
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000;
-    -moz-text-stroke-width: 2px;
+  -moz-text-stroke-width: 2px;
   -moz-text-stroke-color: #000;
   -o-text-stroke-width: 2px;
   -o-text-stroke-color: #000;
@@ -601,7 +613,7 @@ background:   transparent  linear-gradient(
   font-weight: 500;
   text-align: left;
   padding: 20px 0 40px;
-  line-height: 1.3
+  line-height: 1.3;
 }
 
 .testimonial__info__block {
@@ -668,6 +680,9 @@ background:   transparent  linear-gradient(
   letter-spacing: 0.02rem;
   font-weight: 600;
   display: inline-block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
   color: #33a880;
   text-decoration: underline;
   text-decoration-color: #33a880;
@@ -719,6 +734,134 @@ footer {
   font-family: Gilroy-Regular;
   font-size: 1rem;
 }
+
+/* --------------------Model --------------------------------------- */
+
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  z-index: 9999;
+  overflow-y: hidden;
+  display: none;
+}
+
+.model__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent
+    linear-gradient(
+      180deg,
+      rgba(209, 255, 250, 0.6) 0%,
+      rgba(250, 255, 214, 0.8) 100%
+    )
+    0% 0% no-repeat padding-box;
+  padding: 3%; 
+  border-radius: 14px;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  min-width: 400px;
+}
+
+.input__div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.input__label {
+  font-family: Gilroy-Bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem; ;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.input__field {
+  border: none;
+  outline:none;
+  border-bottom: 1px solid #000;
+  background: transparent; 
+  font-size: 1.3rem;
+  font-family: Gilroy-Bold;
+}
+
+.submit__btn {
+  border: none;
+  background-color: #000;
+  width: 100%;
+  padding: 4% 3%;
+  color: #fff;
+  font-family: Gilroy-Bold;
+  font-size: 1rem; 
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.modal__close{
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.modal__close:hover{
+  transform: scale(1.2);
+}
+
+
+form ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+form ul li {
+  list-style: none;
+  list-style-position: outside;
+  padding: 10px 20px 10px 0;
+  float: left;
+}
+
+form input[type="checkbox"]:not(:checked),
+form input[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+form input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid #000;
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+form input[type="checkbox"]:checked + label {
+  background: #000;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------- */
 
 @media screen and (max-width: 1200px) {
   .hero__container {
@@ -1031,21 +1174,18 @@ footer {
   .cta__header {
     font-size: 4rem;
   }
-
 }
 
 /* Small Devices */
 
 @media screen and (max-width: 600px) {
-
-header {
-  height: 80vh;
-  width: 100%;
-  background: transparent;
-}
+  header {
+    height: 80vh;
+    width: 100%;
+    background: transparent;
+  }
 
   .hero__container {
-
     margin: 5% auto;
     width: 80%;
   }
@@ -1112,11 +1252,9 @@ header {
     font-size: 2rem;
   }
 
-  
-.f2 {
-  padding: 5% 40% 5% 13%;
-}
-
+  .f2 {
+    padding: 5% 40% 5% 13%;
+  }
 
   .f2 h1 {
     font-size: 2rem;
@@ -1197,5 +1335,14 @@ header {
   .copyright__para {
     width: 80%;
   }
+}
+
+
+
+@media  (max-width: 410px) {
+  
+.model__content {
+  min-width: 90%;
+}
 
 }
