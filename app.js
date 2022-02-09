@@ -2,6 +2,8 @@ const ctaLink = document.querySelector('.hero__cta__link');
 const ctaLink2 = document.querySelector('.cta__link');
 const modal = document.querySelector('.model');
 const closeButton = document.querySelector('.modal__close');
+
+
 // Modal Section
 
 function showModal() {
@@ -88,3 +90,38 @@ window.onscroll = () => {
 }
 
 
+
+
+// button
+
+const submitButton = document.querySelector('.submit__btn');
+
+// form validation
+const userName = document.querySelector('.name__input');
+const email = document.querySelector('.email__input');  
+
+
+
+
+
+  submitButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (userName.value.length === 0 && email.value.length === 0) {
+      submitButton.disabled = true;
+      console.log("Please fill the form");
+    }
+
+    else {
+      submitButton.disabled = false;
+      submitButton.classList.toggle("active");
+      setTimeout(() => {
+        submitButton.classList.remove("active");
+      }, 4000);
+    }
+  });
+
+
+// only one checklist selected
+$('input[type="checkbox"]').on("change", function () {
+  $('input[type="checkbox"]').not(this).prop("checked", false);
+});

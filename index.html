@@ -13,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS Style link -->
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
     <link href="styles.css" rel="stylesheet" type="text/css">
     <title>Thekua</title>
 </head>
@@ -329,21 +330,21 @@
     <!-- Model Content -->
     <div class="model">
         <div class="model__content">
-            <form>
+            <form action="index.php" method="post">
                 <span class="modal__close">&times;</span>
                 <div class="input__div">
                     <label for="name" class="input__label">Name</label>
-                    <input type="text" class="input__field" id="name" required>
+                    <input type="text" class="input__field name__input" id="name" required>
                 </div>
                 <div class="input__div">
                     <label for="email" class="input__label">Email</label>
-                    <input type="email" class="input__field" id="email" required>
+                    <input type="email" class="input__field email__input" id="email" required>
                 </div>
                 <div class="input__div">
                     <label for="phone" class="input__label">Phone Number</label>
-                    <div>
-                    <input type="text" class="input__field" id="dialCode" size="2" required style="margin-right: 10px ;" placeholder="+91">  
-                    <input type="tel" class="input__field" id="phone" size="22" required>
+                    <div style="display: flex;">
+                    <input type="tel" class="input__field" id="dialCode" size="4" required style="margin-right: 10px ;" placeholder="+91">  
+                    <input type="tel" class="input__field" id="phone" size="20" required>
                     </div>
                 </div>
                 <div class="input__div">
@@ -364,6 +365,7 @@
                     </ul>
                 </div>
                 <button type="submit" class="submit__btn">Submit</button>
+               
             </form>
         </div>
     </div>
@@ -371,7 +373,26 @@
 
     <!-- Script Files -->
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="build/js/intlTelInput.js"></script>
 
+ <script>
+     // input dial code form
+
+     var dialCode = document.querySelector("#dial__code");
+     window.intlTelInput(dialCode, {
+        utilsScript: "build/js/utils.js",
+     });
+
+
+     $(document).ready(function () {
+     $(".iti__flag-container").click(function () {
+     var countryCode = $(".iti__selected-flag").attr("title");
+     var countryCode = countryCode.replace(/[^0-9]/g, "");
+     $("#dial__code").val(countryCode.val());
+     });
+     });
+     </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="app.js"></script>
 </body>
