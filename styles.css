@@ -1254,7 +1254,7 @@ form input[type="checkbox"]:checked + label {
 
   .hero__heading {
     font-size: 4rem;
-    letter-spacing: -3px;
+    letter-spacing: -4px;
   }
 
   #article__section {
@@ -1313,6 +1313,7 @@ form input[type="checkbox"]:checked + label {
 
   .feature__card h1 {
     font-size: 2rem;
+    letter-spacing: -4px;
   }
 
   .f2 {
