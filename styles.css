@@ -1288,6 +1288,10 @@ form input[type="checkbox"]:checked + label {
     font-size: 1.3rem;
   }
 
+  .article__blog {
+    letter-spacing: -0.08px;
+  }
+
   /* Story Telling Section */
 
   #story__telling__section {
