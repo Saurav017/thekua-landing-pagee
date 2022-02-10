@@ -18,7 +18,6 @@
    url(./fonts/Gilroy-Bold.ttf) format('truetype');
   font-style: normal;
   font-weight: 700;
-  
 }
 
 @font-face {
@@ -39,6 +38,7 @@
   src: url(./fonts/Gilroy-Medium.woff) format('woff'),
  url(./fonts/Gilroy-Medium.ttf) format('truetype');
   font-style: normal;
+  font-weight: 500;
 }
 
 * {
