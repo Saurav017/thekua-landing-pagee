@@ -24,6 +24,7 @@
   font-family: Gilroy-ExtraBold;
   src: url(./fonts/Gilroy-ExtraBold.ttf) format('truetype');
   font-style: normal;
+  font-weight: 800;
 }
 
 @font-face {
