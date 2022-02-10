@@ -1289,7 +1289,7 @@ form input[type="checkbox"]:checked + label {
   }
 
   .article__blog {
-    letter-spacing: -0.08px;
+    letter-spacing: -2px;
   }
 
   /* Story Telling Section */
