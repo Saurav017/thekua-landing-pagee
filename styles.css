@@ -1254,6 +1254,7 @@ form input[type="checkbox"]:checked + label {
 
   .hero__heading {
     font-size: 4rem;
+    
   }
 
   #article__section {
