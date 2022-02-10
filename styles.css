@@ -1241,6 +1241,12 @@ form input[type="checkbox"]:checked + label {
 /* Small Devices */
 
 @media screen and (max-width: 600px) {
+
+
+  
+nav {
+  padding: 3%;
+}
   header {
     height: 80vh;
     width: 100%;
