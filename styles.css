@@ -3,7 +3,7 @@
   src: url('./fonts/Gilroy-Regular.woff') format('woff'),
    url(./fonts/Gilroy-Regular.ttf) format('truetype');
   font-style: normal;
-
+  font-weight: 500;
 }
 
 @font-face {
