@@ -1,40 +1,43 @@
 @font-face {
   font-family: Gilroy-Regular;
-  src: url(./fonts/Gilroy-Regular.ttf);
-  letter-spacing: 0;
+  src: url('./fonts/Gilroy-Regular.woff') format('woff'),
+   url(./fonts/Gilroy-Regular.ttf) format('truetype');
+  font-style: normal;
 
 }
 
 @font-face {
   font-family: Gilroy-SemiBold;
-  src: url(./fonts/Gilroy-SemiBold.ttf);
-  letter-spacing: 0;
+  src: url(./fonts/Gilroy-SemiBold.ttf) format('truetype');
+  font-style: normal;
 }
 
 @font-face {
   font-family: Gilroy-Bold;
-  src: url(./fonts/Gilroy-Bold.ttf);
-  letter-spacing: 0;
+  src: url(./fonts/Gilroy-Bold.woff) format('woff'),
+   url(./fonts/Gilroy-Bold.ttf) format('truetype');
+  font-style: normal;
   
 }
 
 @font-face {
   font-family: Gilroy-ExtraBold;
-  src: url(./fonts/Gilroy-ExtraBold.ttf);
-  letter-spacing: 0;
-  
+  src: url(./fonts/Gilroy-ExtraBold.ttf) format('truetype');
+  font-style: normal;
 }
 
 @font-face {
   font-family: Gilroy-Heavy;
-  src: url(./fonts/Gilroy-Heavy.ttf);
-letter-spacing: 0;
+  src: url(./fonts/Gilroy-Heavy.woff) format('woff'),
+ url(./fonts/Gilroy-Heavy.ttf) format('truetype');
+  font-style: normal;
 }
 
 @font-face {
   font-family: Gilroy-Medium;
-  src: url(./fonts/Gilroy-Medium.ttf);
-  letter-spacing: 0;
+  src: url(./fonts/Gilroy-Medium.woff) format('woff'),
+ url(./fonts/Gilroy-Medium.ttf) format('truetype');
+  font-style: normal;
 }
 
 * {
@@ -42,6 +45,7 @@ letter-spacing: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Gilroy-Regular;
+
 }
 
 .gradient__box {
@@ -784,6 +788,7 @@ footer {
   opacity: 1;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+  width: 450px;
   max-width: 450px;
 }
 
@@ -875,6 +880,18 @@ form ul li {
   padding: 10px 20px 10px 0;
   float: left;
 }
+form select {
+  width: 50%;
+  margin-right: 10px;
+  border: none;
+  outline:none;
+  border-bottom: 1px solid #000;
+  font-size: 1.2rem;
+  font-family: Gilroy-Bold;
+  background: transparent;
+  font-weight: 600;
+}
+
 
 form input[type="checkbox"]:not(:checked),
 form input[type="checkbox"]:checked {
@@ -1388,6 +1405,7 @@ form input[type="checkbox"]:checked + label {
   
 .model__content {
   min-width: 90%;
+  width: 90%;
   padding: 10% 5%;
 }
 

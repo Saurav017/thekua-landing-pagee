@@ -94,32 +94,28 @@ window.onscroll = () => {
 
 // button
 
-const submitButton = document.querySelector('.submit__btn');
+let submitButton = document.querySelector('.submit__btn');
 
 // form validation
 const userName = document.querySelector('.name__input');
 const email = document.querySelector('.email__input');  
+let form = document.querySelector('form');
 
 
+form.addEventListener("submit", (e) => {
 
 
-
-  submitButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (userName.value.length === 0 && email.value.length === 0) {
-      submitButton.disabled = true;
-      console.log("Please fill the form");
-    }
-
-    else {
-      submitButton.disabled = false;
-      submitButton.classList.toggle("active");
-      setTimeout(() => {
-        submitButton.classList.remove("active");
-      }, 4000);
-    }
+    alert("Thank you for your message. I will get back to you soon.");
+      
+      // submitButton.classList.toggle("active");
+      // setTimeout(() => {
+      //   submitButton.classList.remove("active");
+      //   form.reset();
+      // }, 4000);
+  
   });
 
+// ********************************************************************
 
 // only one checklist selected
 $('input[type="checkbox"]').on("change", function () {
